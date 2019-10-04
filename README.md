@@ -24,3 +24,8 @@ This repository has four folders for different topics. These are as follows:
 
 **I wish I could help someone with these programs who is starting programming and wants to practice problems.
 ** These can also prove helpful to the people who have urgent submission or lab exam.
+## Contributer(s)
+
+[Tanuj Mehta](https://github.com/tanujkucp)
+
+[Tokir Manva](https://github.com/tokirmanva22)
