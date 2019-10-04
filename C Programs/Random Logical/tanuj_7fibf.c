@@ -2,12 +2,21 @@
 
 int fib(int x,int y,int w){
 if(w>0){
-int z=x+y;
-printf("%d ",z);
-x=y;
-y=z;
-w--;
-return (fib(x,y,w));
+//int z=x+y;
+//printf("%d ",z);
+//x=y;
+//y=z;
+//w--;
+//return (fib(x,y,w));
+// reduce complexity O(n^2) to O(n)
+for(int i=0;i<w;i++)
+{
+	z = x + y;
+	x = z;
+	y = x;
+	printf("%d",z);
+	
+}
 }else{
 printf("End");
 }

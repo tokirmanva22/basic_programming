@@ -11,10 +11,11 @@ swap(a,b);
 }
 void swap(int a,int b)
 {
-int t;
-t=a;
-a=b;
-b=t;
+//int t;
+//not using temp variable
+a= a+b;
+b=a-b;
+a=a-b;
 printf("Numbers After Swapping are:-\n");
 printf("The first number is:-%d",a);
 printf("\n The second number is:-%d",b);
