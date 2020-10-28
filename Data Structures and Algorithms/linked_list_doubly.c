@@ -21,7 +21,7 @@ main(){
 	printll(start);
 	printf("\nEnter command-\n1 insert at position.\n2- delete from position.\n3- Search\n0- Exit\n");
 	scanf("%d",&choice);
-	while(choice!=0){
+	while(choice != 0){
 		switch(choice){
 			case 1 : printf("Enter position where to insert -");
 					 scanf("%d",&pos);
@@ -52,6 +52,7 @@ void read(int num){
 	printf("Enter Name:");
 	scanf("%s",pre->name);
 	fflush(stdin);
+	
 	int i;
 	for(i=1;i<num;i++){
 		struct node *curr=(struct node *)malloc(sizeof(struct node));
@@ -87,7 +88,7 @@ void printll(){
 void insert(int pos){
 	struct node *cur=start;
 	int count;
-	if(pos>(num+1)){
+	if(pos > (num+1)){
 		printf("Entered position is not present in the list.\n");
 		return;
 	}
@@ -96,8 +97,8 @@ void insert(int pos){
 	scanf(" %s",new->id);
 	printf("Enter Name:");
 	scanf(" %s",new->name);
-	if(pos==1){
-		if(num==0){
+	if(pos == 1){
+		if(num == 0){
 			start=new;
 			last=new;
 		}
@@ -115,7 +116,7 @@ void insert(int pos){
 	cur->next=new;
 	cur=new->next;
 	cur->prev=new;
-	if(pos==(num+1)){
+	if( pos == (num+1)){
 		last=new;
 	}
 	}
