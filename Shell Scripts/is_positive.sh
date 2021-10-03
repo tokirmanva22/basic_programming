@@ -1,12 +1,12 @@
 #!/bin/bash
 echo "Enter a number"
 read a
-if [ $a -lt 0 ]
-then
-echo "Number entered is negative."
-elif [ $a -eq 0 ]
+if [ $a -eq 0 ]
 then
 echo "You entered a Zero"
+elif [ 0 -gt $a ]
+then
+echo "Number entered is negative."
 else
 echo "Number entered is positive"
 fi
