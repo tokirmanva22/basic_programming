@@ -1,25 +1,21 @@
 #include<stdio.h>
-void main()
+int main()
 {
-int a[300],n;
+int arr[300],n;
 printf("Enter the size of the array:-");
 scanf("%d",&n);
-int i=0,t,r,rn;
+int i,j,temp;
 
 printf("Enter the array:-");
-for(i=0;i<=n;i++)
- scanf("%d",&a[i]);
-int j=n;
-i=0;
-while(i<j)
-{
-t=a[i];
-a[i]=a[j];
-a[j]=t;
-i++;
-j--;
-}
+for(i=0;i<n;i++)
+ scanf("%d",&arr[i]);
+for ( i = 0, j = n - 1; i < n/2; i++, j--)  
+    {     
+        temp = arr[i];  
+        arr[i] = arr[j];  
+        arr[j] = temp;  
+    }  
 printf("Array after reversing is:-");
-for(i=0;i<=n;i++)
- printf("%d \t",a[i]);
+for(i=0;i<n;i++)
+ printf("%d \t",arr[i]);
 } 
