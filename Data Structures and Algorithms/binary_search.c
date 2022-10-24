@@ -37,16 +37,16 @@ void main(){
 
 int binarySearch(int l, int r, int x)
 {
-   if (r >= l)
+   if (l <= r)
    {
         int mid = l + (r - l)/2;
 		int n=data[mid].id;
         if (n == x)  
             return mid;
-        if (n > x) 
+        else if (x < n) 
             return binarySearch(l, mid-1, x);
-		
-        return binarySearch(mid+1, r, x);
+	else
+            return binarySearch(mid+1, r, x);
    }
    return -1;
 }
