@@ -15,9 +15,12 @@ void read(int arr[],int i){
 	for(j=0; j<i; j++){
 	printf("narr[%d]=",j);
 	scanf("%d",&arr[j]);
-	}}
+	}
+}
+
 void display(const int arr[],int i){
 	int j;
 	for(j= 0; j <i; j++){
 		printf("%d ",arr[j]);
-	}}
+	}
+}
