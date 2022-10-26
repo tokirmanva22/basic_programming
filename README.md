@@ -1,5 +1,5 @@
 # basic_programming
-This repository includes codes and programs for begineer engineering students in C, MATLAB and Shell.
+This repository includes codes and programs for begineer computer engineering students in C, MATLAB and Shell.
 
 This repository has four folders for different topics. These are as follows:
 
@@ -22,11 +22,12 @@ This repository has four folders for different topics. These are as follows:
 - Loops, conditions, patters and logical programming covered.
 
 
-**I wish I could help someone with these programs who is starting programming and wants to practice problems.
+** I wish I could help someone with these programs who is starting programming and wants to practice problems.
 ** These can also prove helpful to the people who have urgent submission or lab exam.
 
 ## Languages Used
 ### C
+
 ### Shell Scripts
 ### MATLAB
 
